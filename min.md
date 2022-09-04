@@ -45,7 +45,13 @@ Building anything from scratch in C is better for understanding how things work.
 
 ### Linux
 
-[To be continued]
+Learn how Linux manages
+- multiple processes and threads
+- memory
+- IO (devices and data)
+- file systems
+
+Learn basic shell commands that show information about and manage processors, memory, file systems and files, network, devices, processes and threads.
 
 ### Concurrency
 
