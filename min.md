@@ -73,6 +73,14 @@ Exercise: calculate the total size of all files on a disk without recursion (hin
 
 ### Networking
 
+Learn IP4 and TCP protocols. There are many more commonly used protocols but these 2 are the base for reliable exchange of data over the internet.
+
+Exercise: write a packet sniffer in C
+
+### Security
+
+[TO CONTINUE]
+
 ### Docker
 
 ### Storage
