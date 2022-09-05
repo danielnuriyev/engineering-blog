@@ -79,9 +79,13 @@ Exercise: write a packet sniffer in C
 
 ### Security
 
-[TO CONTINUE]
+Learn TLS. Security goes beyond encrypting traffic but learning about TLS covers multiple topics in security and serves as a good base.
+
+Exercise: implement an HTTPS client in C
 
 ### Docker
+
+[TO CONTINUE]
 
 ### Storage
 
