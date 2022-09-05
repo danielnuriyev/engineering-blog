@@ -46,14 +46,30 @@ Building anything from scratch in C is better for understanding how things work.
 ### Linux
 
 Learn how Linux manages
-- multiple processes and threads
+- multiple processes and threads. Process and thread priority. Core affinity. How Linux handles a process & thread when it's doing IO. What hyperthreading is.
 - memory
 - IO (devices and data)
 - file systems
 
 Learn basic shell commands that show information about and manage processors, memory, file systems and files, network, devices, processes and threads.
 
+Extra points for looking at the source of these shell commands, and of Linux core.
+
 ### Concurrency
+
+Learn:
+- how Linux manages processes and threads as described above in Linux section.
+- how to use processes & threads in Rust or in Java, or in any language that uses real OS threads (not Dart, JS, Python, Go, Erlang)
+- how processes exchange data
+- how to decide when to use processes and when threads (hint: % of IO, size of exchanged data)
+- concept of threads pools and why they are needed (hint: % of IO + number of cores)
+- difference between parallelism and concurrency
+- how concurrency is implemented in JS and Python. Important: not how to use it but 
+  - what happens to your Python code when you run it in multiple threads (hint: GIL and why this design was chosen originally)
+  - what happens to your JS code when you create a callback (hint: event loop and why this design was chosen by creators of V8)
+- concept of "green threads" and how concurrnecy is implemented in Go. Important: not how to use goroutines but how Go executes them, queues them, switches among them.
+
+Exercise: calculate the total size of all files on a disk without recursion (hint: use a queue) and using concurrency in JS, Python, Rust/Java and Go/Erlang (they implement concurrency differently). In each of the 4 languages: what was faster: threads or processes and why.
 
 ### Networking
 
