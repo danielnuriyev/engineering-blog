@@ -113,6 +113,8 @@ It is good to get a hands-on experience with each of them: install, insert data,
 
 It is good to do the same for their cloud-based serverless analogs. AWS is the most widely used cloud.
 
+[Global DB ranking](https://db-engines.com/en/ranking). You can also rank them by type. They classify Radis and PrestoDB differently than I do, so follow my list.
+
 At your current and next job you will not use all these database types but knowing the types and their strong/weak sides is good to be able to choose the best when you need.
 
 ### Horizontal scaling
