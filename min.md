@@ -83,13 +83,41 @@ Learn TLS. Security goes beyond encrypting traffic but learning about TLS covers
 
 Exercise: implement an HTTPS client in C
 
+In addition, read about [cryptographic hashing](https://en.wikipedia.org/wiki/Cryptographic_hash_function). It is commonly used and not only for protecting data.
+
 ### Docker
 
-[TO CONTINUE]
+Docker is used to create an environment for coding and running stuff. For example, on your Mac or Windows machine you can code something in a Linux environment and then deploy it onto a "cloud" (AWS, Azure, GCP, Oracle etc.). This creates consistency among engineers and environments (development, testing, staging, production). Nowadays it's a must.
 
 ### Storage
 
+Learn about the most commonly used Linux filesystems: their design, their purpose, when to use which.
+
+Learn about the types databases: 
+- relational (MariaDB) 
+- key/value (Memcached) 
+- document (MongoDB) 
+- data structures (Redis) 
+- columnar (Cassandra) 
+- query engines (PrestoDB) 
+- graph (Neo4J)
+- search (ElasticSearch)
+
+Answer these questions for each:
+- how they store and retrieve
+- how they scale with 
+  - concurrent inserts, updates, deletes, retrievals and why
+  - size of data for inserts, updates, deletes, retrievals and why
+
+It is good to get a hands-on experience with each of them: install, insert data, retrieve data;
+
+It is good to do the same for their cloud-based serverless analogs. AWS is the most widely used cloud.
+
+At your current and next job you will not use all these database types but knowing the types and their strong/weak sides is good to be able to choose the best when you need.
+
 ### Horizontal scaling
+
+[TO CONTINUE]
 
 ### Cloud
 
