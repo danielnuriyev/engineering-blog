@@ -132,7 +132,19 @@ Learn how the database technologies listed above implement horizontal scaling, h
 
 Create an AWS account and do everything above on AWS as if your local computer is just a terminal.
 
+AWS because it is the default. If you need to work on another cloud, it will be similar.
+
+### Kubernetes
+
+Now when we are on AWS, learn Kubernetes: what it is, why it was created, its components, how to run it locally. Create a basic echo server and deploy it locally into 2 pods with a load balancer and try to use it.
+
+Learn Helm Charts for K8s and do the same ^ using Helm.
+
+Then deploy it onto AWS EKS.
+
 ### GPU
+
+[TO CONTINUE]
 
 ### Specialized but useful
 
