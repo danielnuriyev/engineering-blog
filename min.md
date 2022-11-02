@@ -119,9 +119,18 @@ At your current and next job you will not use all these database types but knowi
 
 ### Horizontal scaling
 
-[TO CONTINUE]
+Learn the difference between vertical and horizontal scaling.
+
+Vertical scaling is done by 
+- hardware that better addresses the performance bottlenecks
+- choice of software and its configuration
+- code optimimizations if you are writing it
+
+Learn how the database technologies listed above implement horizontal scaling, how they decide on which node to store which part of data etc. They are quite different. Even through we code on Clouds, knowing how clouds scale is useful because you may work on one of them, not all technologies are on your cloud, it is useful to know how your technology of choice scales for your efficient use of it.
 
 ### Cloud
+
+Create an AWS account and do everything above on AWS as if your local computer is just a terminal.
 
 ### GPU
 
