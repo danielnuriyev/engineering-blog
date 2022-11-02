@@ -144,6 +144,10 @@ Then deploy it onto AWS EKS.
 
 ### GPU
 
+[GPU](https://en.wikipedia.org/wiki/Graphics_processing_unit) is a part of every phone and laptop. It is good to know how GPU architecture is different from CPU. Due to GPU availability and GPU's ability to process [matrices]([https://en.wikipedia.org/wiki/Matrix_(mathematics)](https://www.mathsisfun.com/algebra/matrix-introduction.html)), whether to use GPU for parts of code should be a consideration in your software design.
+
+Before learning about GPU, it is useful to learn about [matrices]([https://en.wikipedia.org/wiki/Matrix_(mathematics)](https://www.mathsisfun.com/algebra/matrix-introduction.html)) and [vectors]([https://en.wikipedia.org/wiki/Vector_calculus](https://www.mathsisfun.com/algebra/vectors.html)). 
+
 [TO CONTINUE]
 
 ### Specialized but useful
