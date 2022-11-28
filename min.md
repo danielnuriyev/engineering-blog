@@ -152,6 +152,8 @@ Also read about [General-Purpose computing on Graphics Processing Units](https:/
 
 ### Specialized but useful
 
+#### Statistics, ML and neural chips
+
 [TO CONTINUE]
 
 #### Web UI
