@@ -144,13 +144,15 @@ Then deploy it onto AWS EKS.
 
 ### GPU
 
-[GPU](https://en.wikipedia.org/wiki/Graphics_processing_unit) is a part of every phone and laptop. It is good to know how GPU architecture is different from CPU. Due to GPU availability and GPU's ability to process [matrices]([https://en.wikipedia.org/wiki/Matrix_(mathematics)](https://www.mathsisfun.com/algebra/matrix-introduction.html)), whether to use GPU for parts of code should be a consideration in your software design.
+[GPU](https://en.wikipedia.org/wiki/Graphics_processing_unit) is a part of most phones and laptops. It is good to know how GPU architecture is different from CPU. Due to GPU availability and GPU's ability to process [matrices]([https://en.wikipedia.org/wiki/Matrix_(mathematics)](https://www.mathsisfun.com/algebra/matrix-introduction.html)), whether to use GPU for parts of code should be a consideration in your software design.
 
 Before learning about GPU, it is useful to learn about [matrices]([https://en.wikipedia.org/wiki/Matrix_(mathematics)](https://www.mathsisfun.com/algebra/matrix-introduction.html)) and [vectors]([https://en.wikipedia.org/wiki/Vector_calculus](https://www.mathsisfun.com/algebra/vectors.html)). 
 
-[TO CONTINUE]
+Also read about [General-Purpose computing on Graphics Processing Units](https://en.wikipedia.org/wiki/General-purpose_computing_on_graphics_processing_units), [OpenCL](https://en.wikipedia.org/wiki/OpenCL) and take a look at [this Python example](https://web.archive.org/web/20170907175053/http://enja.org:80/2011/02/22/adventures-in-pyopencl-part-1-getting-started-with-python)
 
 ### Specialized but useful
+
+[TO CONTINUE]
 
 #### Web UI
 
