@@ -152,9 +152,20 @@ Also read about [General-Purpose computing on Graphics Processing Units](https:/
 
 ### Specialized but useful
 
-[TO CONTINUE]
-
 #### Web UI
+
+You need to know how to build a Web UI in a few cases:
+- this is your specialization
+- your current/next role requires this skill, often as a part of a "full stack" role
+
+Otherwise, knowing how to build a Web UI is frequently needed to visualize what you work on, especially if the data is dynamic.
+
+Nowadays most Web Applications are built using frameworks such as [ReactJS](https://reactjs.org) but I am not sure that one can build anything using a framework without knowing the following building blocks:
+- HTML
+- CSS
+- JavaScript, including NodeJS, how to set up a JS project for NodeJS
+
+[TO CONTINUE]
 
 #### Apps
 
