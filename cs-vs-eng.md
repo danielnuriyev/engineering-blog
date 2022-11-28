@@ -9,7 +9,7 @@ A software engineer is a handyman who learns and uses tools to achieve goals giv
 
 Of course, a computer scientist is usually an engineer and an engineer is not necessarily just a handyman but here I will juxtapose these terms. 
 
-The difference is in the way of thinking. Given the same task, both will produce results that looks the same on the outside but is fundamentally different in how it works.
+The difference is in the way of thinking. Given the same task, both will produce results that looks the same on the outside but are fundamentally different in how it works.
 
 Example: write a function that finds the greatest even number in an array.
 
@@ -34,8 +34,6 @@ This ^ is based on tens of real life examples of software engineering interviewe
 A person who thinks as a computer scientist will write:
 
 ```python
-
-import sys
 
 def find_max_even(numbers):
 
