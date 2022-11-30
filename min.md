@@ -168,19 +168,28 @@ Nowadays most Web Applications are built using frameworks such as [ReactJS](http
 
 ## Statistics
 
-[WIP]
-
 Statistics helps us analyze data. For example, data coming from logs. That's why it is useful to know basic statistics definitions and tools.
 
 **Terms**:
 
-- normal distribution
-- standard definition
-- confusion matrix
+- [histogram](https://en.wikipedia.org/wiki/Histogram)
+- [types of mean/average](https://towardsdatascience.com/on-average-youre-using-the-wrong-average-geometric-harmonic-means-in-data-analysis-2a703e21ea0)
+- [standard definition](https://www.mathsisfun.com/data/standard-deviation.html)
+- [normal distribution](https://en.wikipedia.org/wiki/Normal_distribution)
+- [covariance](https://www.mathsisfun.com/data/covariance.html)
+- [r-squared](https://www.investopedia.com/terms/r/r-squared.asp)
+- [correlation](https://machinelearningmastery.com/how-to-use-correlation-to-understand-the-relationship-between-variables/)
+- [enthropy](https://www.analyticsvidhya.com/blog/2020/11/entropy-a-key-concept-for-all-data-science-beginners/)
+- normality test
 
 **Tools**
 
-These languages have good statistics libraries: R, Python + Pandas, Julia
+The commonly used languages should have these statistical functions ether as a part of the standard library or as an open source library.
+
+These languages are commonly used by data engineers, analysts, scientists and mathematicians:
+- Python. To work with tabular data use Pandas/Dask. Also, they have statistical functions. If you need more statistics, use statsmodels.
+- R
+- Julia
 
 ## Computer science
 
