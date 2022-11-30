@@ -196,6 +196,8 @@ These languages are commonly used by data engineers, analysts, scientists and ma
 +TPU/NPU
 +Jupyter
 
+## Languages
+
 ## Approach to engineering
 
 ## Social skills
