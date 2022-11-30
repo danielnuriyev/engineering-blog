@@ -161,15 +161,17 @@ You need to know how to build a Web UI in a few cases:
 Otherwise, knowing how to build a Web UI is frequently needed to visualize what you work on, especially if the data is dynamic.
 
 Nowadays most Web Applications are built using frameworks such as [ReactJS](https://reactjs.org) but I am not sure that one can build anything using a framework without knowing the following building blocks:
-- HTML
-- CSS
-- JavaScript, including NodeJS, how to set up a JS project for NodeJS
-
-[TO CONTINUE]
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript), including [NodeJS](https://nodejs.org/en/)
+- [WebSocket](https://github.com/websockets/ws), also [this](https://socket.io/) and [this](https://www.npmjs.com/package/react-use-websocket)
 
 #### Apps
 
+[TO CONTINUE]
+
 +TPU/NPU
++Jupyter
 
 #### 3D graphics
 
