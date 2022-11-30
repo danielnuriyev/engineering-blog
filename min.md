@@ -150,7 +150,7 @@ Before learning about GPU, it is useful to learn about [matrices]([https://en.wi
 
 Also read about [General-Purpose computing on Graphics Processing Units](https://en.wikipedia.org/wiki/General-purpose_computing_on_graphics_processing_units), [OpenCL](https://en.wikipedia.org/wiki/OpenCL) and take a look at [this Python example](https://web.archive.org/web/20170907175053/http://enja.org:80/2011/02/22/adventures-in-pyopencl-part-1-getting-started-with-python)
 
-### Specialized but useful
+### Extra
 
 #### Web UI
 
@@ -166,16 +166,26 @@ Nowadays most Web Applications are built using frameworks such as [ReactJS](http
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript), including [NodeJS](https://nodejs.org/en/)
 - [WebSocket](https://github.com/websockets/ws), also [this](https://socket.io/) and [this](https://www.npmjs.com/package/react-use-websocket)
 
-#### Apps
+## Statistics
 
-[TO CONTINUE]
+[WIP]
+
+Statistics helps us analyze data. For example, data coming from logs. That's why it is useful to know basic statistics definitions and tools.
+
+**Terms**:
+
+- normal distribution
+- standard definition
+- confusion matrix
+
+**Tools**
+
+These languages have good statistics libraries: R, Python + Pandas, Julia
+
+## Computer science
 
 +TPU/NPU
 +Jupyter
-
-#### 3D graphics
-
-## Computer science
 
 ## Approach to engineering
 
