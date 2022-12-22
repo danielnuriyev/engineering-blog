@@ -4,7 +4,7 @@ This is intended for an engineer before a first professional job.
 I am writing this because I find junior engineers lacking basic knowledge and skills
 and this lack projects years into their careers leading to career slowdown.
 
-## Knowledge
+## Technologies
 
 A good engineer should know how things work inside. 
 If you write code and do not know how it is compiled and executed, 
@@ -150,9 +150,7 @@ Before learning about GPU, it is useful to learn about [matrices]([https://en.wi
 
 Also read about [General-Purpose computing on Graphics Processing Units](https://en.wikipedia.org/wiki/General-purpose_computing_on_graphics_processing_units), [OpenCL](https://en.wikipedia.org/wiki/OpenCL) and take a look at [this Python example](https://web.archive.org/web/20170907175053/http://enja.org:80/2011/02/22/adventures-in-pyopencl-part-1-getting-started-with-python)
 
-### Extra
-
-#### Web UI
+### Web UI
 
 You need to know how to build a Web UI in a few cases:
 - this is your specialization
@@ -191,12 +189,48 @@ These languages are commonly used by data engineers, analysts, scientists and ma
 - R
 - Julia
 
+**Jupyter**: a tool for analytsing data.
+
+## Machine Learning
+
+Like statistics, ML is a useful tool that, if you are familiar with, may increase your options of data analysis.
+It is also one of the directions in which technology is currently developing. So, not being familiar with ML is a disability.
+
+You can learn ML as 
+- an engineer: most ML projects share the same steps from gathering data all the way to monitoring a model in production.
+- as a data scientist: know how each step of the ML process works. For example, how to identify if data is suitable to be used for ML.
+- as an ML user: use a library that does everything for you.
+
+ML deserves a separate page. TBD +TPU/NPU
+
 ## Computer science
 
-+TPU/NPU
-+Jupyter
+CS is the mathematical principles for designing efficient technologies.
+
+To get the flavor of what I mean study how the core data structures are implemented in C: array, linked list, hash map, trees, graphs.
+
+Learn how to calculate the time to add an element and to find an element using big O notation.
+
+Learn at least 3 types of sorting algorithms for each data structure, if applicable.
+
+Any good design must use math. Otherwise it has unexpected consequences.
+
+**Object Oriented** design is a must for designing complex systems. Use C++ when you learn this. There are languages with better OO design but C++ is a good first step in this direction after C.
 
 ## Languages
+
+I recommend learning these languages no matter what:
+
+- Assembley: if you haven't tried Assembley, you do not know how a computer works.
+- C: if you haven't coded in C, you do not know how software actually works.
+- C++: low level OO language used for firmware and for speed
+
+These languages are good for their respective areas:
+
+- JavaScript for APIs and web applications
+- Dart for mobile apps
+- Python for data and for APIs/backend when speed is of lower importance
+- Julia for data if you also need speed and concurrency. It is also good for APIs with spikes due to its [coroutines](https://en.wikipedia.org/wiki/Tensor_Processing_Unit#Google_Tensor).
 
 ## Approach to engineering
 
