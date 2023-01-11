@@ -232,13 +232,33 @@ These languages are good for their respective areas:
 - Python for data and for APIs/backend when speed is of lower importance
 - Julia for data if you also need speed and concurrency. It is also good for APIs with spikes due to its [coroutines](https://en.wikipedia.org/wiki/Tensor_Processing_Unit#Google_Tensor).
 
-## Approach to engineering
+## Testing
 
-## Social skills
+Learn what is Unit Testing versus Integration Testing. What their best practices are. Learn how to set them up in the languages and for the technologies that I listed above.
 
 ## Approach to work
 
+The worst engineers that I see are those whose goal is to accomplish goals. This sounds counterintuitive. 
+Who would not like an employee who achieves goals. This is true and it works in many cases. 
+But achieving a goal is not the same as producing scalable code, i.e. modular, readable, easy to test, deploy and monitor, scalable in speed and throughput.
+
+The best engineers that I see are those who do engineering in addition to a job because doing it inspires them.
+
+The best engineers want to see the bigger picture: what is the goal of my task, what are the effects of my code.
+
+The best engineers look for improvements in the requirements are argue with their bosses.
+
+## Team skills
+
+Good engineers love to learn, improve, create, see the positive effect of their work.
+
+Better engineers want their teammates and team to succeed. You can work for your boss (bad engineer from above), work for yourself, work for the love of the art of engineering, or you can work for the success of your teammates, your team, your company. Working for the succees of others does not exclude the other levels but puts you on a higher level as an engineer and human.
+
 ## Workflow
+
+## Other
+
+## Trends
 
 ## Beyond engineering
 
