@@ -9,3 +9,4 @@ I would like to write about these topics:
 - What are the various career levels
 - How to interview
 - Where the technology is headed
+- Basic data science skills
