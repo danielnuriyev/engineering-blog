@@ -291,6 +291,6 @@ Know the current tech trends. At the moment these seem worthy:
 ## Beyond engineering
 
 Engineering skills can be applied to many other situations in life because we should be good at learning situations and paving a path to a desired outcome. This may sound as a no-brainer but many people have mental blocks.
-Also, the ability to come up with ideas, the desire to do something useful, the social skills and applicable anywhere.
+Also, the ability to come up with ideas, the desire to do something useful, the social skills are applicable anywhere.
 
 Be an engineer: free, all powerful and positive for others.
