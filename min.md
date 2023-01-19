@@ -164,6 +164,24 @@ Nowadays most Web Applications are built using frameworks such as [ReactJS](http
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript), including [NodeJS](https://nodejs.org/en/)
 - [WebSocket](https://github.com/websockets/ws), also [this](https://socket.io/) and [this](https://www.npmjs.com/package/react-use-websocket)
 
+## Computer science
+
+CS is the mathematical principles for designing efficient technologies.
+
+To get the flavor of what I mean study how the core data structures are implemented in C: array, linked list, hash map, trees, graphs.
+
+Learn how to calculate the time to add an element and to find an element using big O notation.
+
+Learn at least 3 types of sorting algorithms for each data structure, if applicable.
+
+Any good design must use math. Otherwise it has unexpected consequences.
+
+**Object Oriented** design is a must for designing complex systems. Use C++ when you learn this. There are languages with better OO design but C++ is a good first step in this direction after C.
+
+## Blockchain
+
+Blockchain is a buzz but also a complex of structures and algorithms that have useful applications. Not knowing the core concepts and possible applications is strange. Learn the structure of Bitcoin, why and for what it was designed, its shortcumming, how other blockchains try to resolve them, how blockchains are used besides currencies. As always, drill into the technical details.
+
 ## Statistics
 
 Statistics helps us analyze data. For example, data coming from logs. That's why it is useful to know basic statistics definitions and tools.
@@ -197,25 +215,13 @@ Like statistics, ML is a useful tool that, if you are familiar with, may increas
 It is also one of the directions in which technology is currently developing. So, not being familiar with ML is a disability.
 
 You can learn ML as 
-- an engineer: most ML projects share the same steps from gathering data all the way to monitoring a model in production.
-- as a data scientist: know how each step of the ML process works. For example, how to identify if data is suitable to be used for ML.
+- an engineer: most ML projects share the same steps from gathering data all the way to monitoring a model in production. AKA _ML Workflow_
+- as a data scientist: know how each step of the _ML Workflow_ works. For example, how to identify if data is suitable to be used for ML.
 - as an ML user: use a library that does everything for you.
 
 ML deserves a separate page. TBD +TPU/NPU
 
-## Computer science
-
-CS is the mathematical principles for designing efficient technologies.
-
-To get the flavor of what I mean study how the core data structures are implemented in C: array, linked list, hash map, trees, graphs.
-
-Learn how to calculate the time to add an element and to find an element using big O notation.
-
-Learn at least 3 types of sorting algorithms for each data structure, if applicable.
-
-Any good design must use math. Otherwise it has unexpected consequences.
-
-**Object Oriented** design is a must for designing complex systems. Use C++ when you learn this. There are languages with better OO design but C++ is a good first step in this direction after C.
+In addition, understand the difference between AI and ML.
 
 ## Languages
 
@@ -252,13 +258,25 @@ The best engineers look for improvements in the requirements are argue with thei
 
 Good engineers love to learn, improve, create, see the positive effect of their work.
 
-Better engineers want their teammates and team to succeed. You can work for your boss (bad engineer from above), work for yourself, work for the love of the art of engineering, or you can work for the success of your teammates, your team, your company. Working for the succees of others does not exclude the other levels but puts you on a higher level as an engineer and human.
+Better engineers want their teammates and team to succeed. You can work for your boss (bad engineer from above), work for yourself, work for the love of the art of engineering, or you can work for the success of your teammates, your team, your company, mankind. Working for the succees of others does not exclude the other levels but puts you on a higher level as an engineer and human. It takes time to grow to this level but at least keep this in mind.
 
 ## Workflow
 
-## Other
+You should master 2 types of workflow: task and team.
+
+Working on a task means going through steps such as design, implementation, testing, deployment, monitoring (there are more steps and sub-steps). You will naturally progress through some of them starting with your first Assembley project. Some of them come only when you work on a real product for real users.
+
+Another type of workflow is how a team organizes its works. It is very specific for a team and it comes with experience but from your first Assembly project you should follow the Agile Principles. Learn about them, apply them, review how efficient you were, think of improvements, repeat.
 
 ## Trends
 
+Know the current tech trends. I propose that you become familiar with the following:
+
+- 5G: learn how different it is from 4G, what new opportunities it opens
+- Quantum Computing: what it is on the physical level, how it can be used
+- Metaverses: keep an eye on them. At some point when companies start to cooperate on the network protocol and data format, we'll go 3D.
+
 ## Beyond engineering
 
+Engineering is not only an inspiring activity, it is a way of looking at the world. A good engineer is a creative person generally. A good engineer is a person who easily cooperates. Methodology of approaching problems in engineering can easily be expanded to many situation in life.
+ 
