@@ -172,7 +172,7 @@ Nowadays most Web Applications are built using frameworks such as [ReactJS](http
 
 Learn how negative and floating point numbers are represented in commonly used processors.
 
-### Computer science
+### Data Structures
 
 CS is the mathematical principles for designing efficient technologies.
 
@@ -184,7 +184,9 @@ Learn at least 3 types of sorting algorithms for each data structure, if applica
 
 Any good design must use math. Otherwise it has unexpected consequences.
 
-**Object Oriented** design is a must for designing complex systems. Use C++ when you learn this. There are languages with better OO design but C++ is a good first step in this direction after C.
+### Object Oriented
+
+OO Design is a must for designing complex systems. Use C++ when you learn this. There are languages with better OO design but C++ is a good first step in this direction after C.
 
 ### Blockchain
 
