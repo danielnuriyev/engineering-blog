@@ -168,7 +168,7 @@ Nowadays most Web Applications are built using frameworks such as [ReactJS](http
 
 ## Math
 
-## Binary stuff
+### Binary stuff
 
 Learn how negative and floating point numbers are represented in commonly used processors.
 
