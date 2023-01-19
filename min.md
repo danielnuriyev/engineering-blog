@@ -1,8 +1,10 @@
-# Minimum requirements for being a good software engineer
+# Minimal requirements for being a good software engineer
 
-This is intended for an engineer before a first professional job.
-I am writing this because I find junior engineers lacking basic knowledge and skills
-and this lack projects years into their careers leading to career slowdown.
+I list the core pieces of knowledge and basic skills that you need to start being a good engineer.
+They seem numerous but without them you will be like those who did not even know they a wheel exists somewhere across the ocean.
+You do not need to become an expert in each topic, just getting the figers dirty is enough in some of them.
+The list is divided into Technologies, Math, Languages, Organization,  Trends, Beyond Engineering.
+
 
 ## Technologies
 
@@ -164,7 +166,9 @@ Nowadays most Web Applications are built using frameworks such as [ReactJS](http
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript), including [NodeJS](https://nodejs.org/en/)
 - [WebSocket](https://github.com/websockets/ws), also [this](https://socket.io/) and [this](https://www.npmjs.com/package/react-use-websocket)
 
-## Computer science
+## Math
+
+### Computer science
 
 CS is the mathematical principles for designing efficient technologies.
 
@@ -178,11 +182,11 @@ Any good design must use math. Otherwise it has unexpected consequences.
 
 **Object Oriented** design is a must for designing complex systems. Use C++ when you learn this. There are languages with better OO design but C++ is a good first step in this direction after C.
 
-## Blockchain
+### Blockchain
 
 Blockchain is a buzz but also a complex of structures and algorithms that have useful applications. Not knowing the core concepts and possible applications is strange. Learn the structure of Bitcoin, why and for what it was designed, its shortcumming, how other blockchains try to resolve them, how blockchains are used besides currencies. As always, drill into the technical details.
 
-## Statistics
+### Statistics
 
 Statistics helps us analyze data. For example, data coming from logs. That's why it is useful to know basic statistics definitions and tools.
 
@@ -209,7 +213,7 @@ These languages are commonly used by data engineers, analysts, scientists and ma
 
 **Jupyter**: a tool for analytsing data.
 
-## Machine Learning
+### Machine Learning
 
 Like statistics, ML is a useful tool that, if you are familiar with, may increase your options of data analysis.
 It is also one of the directions in which technology is currently developing. So, not being familiar with ML is a disability.
@@ -238,11 +242,13 @@ These languages are good for their respective areas:
 - Python for data and for APIs/backend when speed is of lower importance
 - Julia for data if you also need speed and concurrency. It is also good for APIs with spikes due to its [coroutines](https://en.wikipedia.org/wiki/Tensor_Processing_Unit#Google_Tensor).
 
-## Testing
+## Organization
+
+### Testing
 
 Learn what is Unit Testing versus Integration Testing. What their best practices are. Learn how to set them up in the languages and for the technologies that I listed above.
 
-## Approach to work
+### Approach to work
 
 The worst engineers that I see are those whose goal is to accomplish goals. This sounds counterintuitive. 
 Who would not like an employee who achieves goals. This is true and it works in many cases. 
@@ -254,13 +260,13 @@ The best engineers want to see the bigger picture: what is the goal of my task, 
 
 The best engineers look for improvements in the requirements are argue with their bosses.
 
-## Team skills
+### Team skills
 
 Good engineers love to learn, improve, create, see the positive effect of their work.
 
 Better engineers want their teammates and team to succeed. You can work for your boss (bad engineer from above), work for yourself, work for the love of the art of engineering, or you can work for the success of your teammates, your team, your company, mankind. Working for the succees of others does not exclude the other levels but puts you on a higher level as an engineer and human. It takes time to grow to this level but at least keep this in mind.
 
-## Workflow
+### Workflow
 
 You should master 2 types of workflow: task and team.
 
@@ -270,7 +276,7 @@ Another type of workflow is how a team organizes its works. It is very specific 
 
 ## Trends
 
-Know the current tech trends. I propose that you become familiar with the following:
+Know the current tech trends. At the moment these seem worthy:
 
 - 5G: learn how different it is from 4G, what new opportunities it opens
 - Quantum Computing: what it is on the physical level, how it can be used
@@ -278,5 +284,7 @@ Know the current tech trends. I propose that you become familiar with the follow
 
 ## Beyond engineering
 
-Engineering is not only an inspiring activity, it is a way of looking at the world. A good engineer is a creative person generally. A good engineer is a person who easily cooperates. Methodology of approaching problems in engineering can easily be expanded to many situation in life.
- 
+Engineering skills can be applied to many other situations in life because we should be good at learning situations and paving a path to a desired outcome. This may sound as a no-brainer but many people have mental blocks.
+Also, the ability to come up with ideas, the desire to do something useful, the social skills and applicable anywhere.
+
+Be an engineer: free, all powerful and positive for others.
