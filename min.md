@@ -1,7 +1,7 @@
 # Minimal requirements for being a good software engineer
 
 I list the core pieces of knowledge and basic skills that you need to start being a good engineer.
-They seem numerous but without them you will be like those who did not even know they a wheel exists somewhere across the ocean.
+They seem numerous but without them you will be like those who did not even know that a wheel exists somewhere across the ocean.
 You do not need to become an expert in each topic, just getting the figers dirty is enough in some of them.
 The list is divided into Technologies, Math, Languages, Organization,  Trends, Beyond Engineering.
 
