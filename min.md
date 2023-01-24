@@ -27,7 +27,9 @@ At the end of the day, whatever you write runs on hardware and if you want to be
 Take a simple controller, such as [Arduino](https://www.arduino.cc/en/Guide/Introduction), with 1 sensor and 1 output device and write a loop that does something simple.
 
 No need to dive deeper unless you want to go into firmware engineering 
-which actually is a great field due to the rapid development of robotics, automation, AI
+which actually is a great field due to the rapid development of robotics, automation, AI.
+
+To learn Aeduino I recommend buying a kit like [Arduino Student Kit](https://store-usa.arduino.cc/collections/kits/products/arduino-student-kit), using the online IDE and following the [examples](https://docs.arduino.cc/built-in-examples/).
 
 ### C
 
