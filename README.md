@@ -3,7 +3,7 @@
 I would like to write about these topics:
 
 - [Difference between a computer scientist and an engineer](./cs-vs-eng.md)
-- [Minimal requirements for being a good software engineer](./min.md)
+- [Minimal requirements for being a good software engineer](./minimal-requirements-for-a-good-software-engineer.md)
 - What programming languages are the best for their respective purposes
 - What is data engineering and how it is different from analytics and data science
 - What are the various career levels
