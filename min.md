@@ -24,7 +24,7 @@ Therefore most sections describe not only what you should know but also what you
 
 At the end of the day, whatever you write runs on hardware and if you want to be methodical in learning engineering, start with hardware.
 
-Take a simple controller, such as (Arduino)[https://www.arduino.cc/en/Guide/Introduction], with 1 sensor and 1 output device and write a loop that does something simple.
+Take a simple controller, such as [Arduino](https://www.arduino.cc/en/Guide/Introduction), with 1 sensor and 1 output device and write a loop that does something simple.
 
 No need to dive deeper unless you want to go into firmware engineering 
 which actually is a great field due to the rapid development of robotics, automation, AI
