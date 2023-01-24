@@ -28,4 +28,11 @@ For all Operating Systems, you may need to lower in stack and use C++ or even C.
 
 ## Backend
 
+TBC
+
 ## OS and Hardware
+
+## Which languages cover most use cases
+
+## Best order for learning programming languages
+
