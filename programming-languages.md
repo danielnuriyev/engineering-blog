@@ -26,9 +26,9 @@ JavaScript is the language of a browser.
 
 For all Operating Systems, you may need to lower in stack and use C++ or even C.
 
-## Backend APIs
+## Backend
 
-Backend APIs can be developed in all languages listed above but they have inherent flaws:
+Backend APIs and workers can be developed in all languages listed above but they have inherent flaws:
 - Dart is the best choice for cross platform mobile apps but the language runs within JavaScript constraints, so why not just use JavaScript
 - JavaScipt is a good choice. A single nodejs process can handle multiple concurrent requests by placing them on a queue. The queue is handled by a single OS thread. This works well if you have access to multiple 1-2 core machines, otherwise it's worth spawning 1 nodejs process per core + you can keep one core free. The flaw of JavaScript/NodeJs is that if for whatever reason a single request takes much of CPU (non-IO) time, the whole queue will wait. To be on the safe side it is better to use languages that utilize multiple cores and identify stuck functions, like Go does. More about this later. Another flaw is that a nodejs process is limited to 1.5GB of memory. If you need more, JavaScript is not for you.
 - Kotlin runs on JVM whose flaws are: impossible to kill a stuck Thread, the amount of memory it uses is orders of magnitude greater than the actual data. But it does utilize multiple cores, so in this respect it is better than NodeJS.
@@ -36,7 +36,7 @@ Backend APIs can be developed in all languages listed above but they have inhere
 - C++ and C are too low level. You will have to code things that JavaScript, Kotlin and other engineers are not even aware of.
 - .NET languages is a story similar to Swift.
 
-Now let's pick a good language for backend APIs.
+Now let's pick a good language for the backend.
 
 Ideally, tt should:
 - handle spikes
@@ -45,17 +45,35 @@ Ideally, tt should:
 - use little memory, not get stuck on garbage collection, not be limited in memory size
 - be fast
 - have extensibility, like OO
-- be simple, brief with mechanisms preventic production surprises, for example, typed
+- be simple, with mechanisms that prevent production surprises, for example, typed
+- cross platform
 
-There are more features but these are the ones that differentiate backend API languages.
+There are more features but these are the ones that differentiate backend languages.
 
 Above I did not filter out JavaScript and Kotlin but they have flaws. Let's a look at more languages.
 
-TBC
+The only language that matches these requirements is Go but although it has interfaces and a way to extend them, practically, after having used OO languages mentioned above, I found it clumsy to implement an extensible design. 
 
-## Backend Workers
+Next candidates are Julia and Rust. Their only flaw is that like JavaScript and Kotlin they do not handle a stuck thread but 
+- compared to JavaScript, they are not limited in memory
+- compared to Kotlin, they do not use too much memory
+
+So what do we have:
+- JavaScript is good for microservices where each event queue can use up to 1.5GB of memory. Beware of unexpected CPU (non-IO) bottlenecks.
+- Go for massively concurrent code but low complexity.
+- Julia is generally good but not as popular, and you may need to programmatically prevent hang-ups using `yield`
+- Rust is generally good, not so popular but more popular for backend than Julia, and unlike Julia it was designed for the backend, but you may need to programmatically prevent hang-ups using `yield`
+- Kotlin is generally good but you need to keep an eye on the memory and programmatically prevent hang-ups using `yield`.
+- Python
+  - if you want to code quickly
+  - do not need concurrency inside a single process, for example, when you use AWS Lambda
+  - code that uses CPU does not need to be blazingly fast
+
+I think that generally best option is Rust. But look at the specific considerations of your project. Don't be a "I am a JavaScript programmer" type of person.
 
 ## OS and Hardware
+
+TBC
 
 ## Which languages cover most use cases
 
