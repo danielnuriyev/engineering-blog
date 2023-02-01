@@ -37,7 +37,7 @@ Learn C which is the foundation for today's mostly used languages. If you take A
 
 ### Languages
 
-Learn what types of computer languages there are. What considerations go into the design of languages.
+Learn what types of computer languages there are. What considerations go into the design of languages. Wikipedia has a nice historic overview and structural description [here](https://en.wikipedia.org/wiki/Programming_language)
 
 ### Compilation
 
