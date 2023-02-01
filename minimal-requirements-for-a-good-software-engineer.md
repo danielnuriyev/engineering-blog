@@ -202,7 +202,7 @@ Statistics helps us analyze data. For example, data coming from logs. That's why
 
 - [histogram](https://en.wikipedia.org/wiki/Histogram)
 - [types of mean/average](https://towardsdatascience.com/on-average-youre-using-the-wrong-average-geometric-harmonic-means-in-data-analysis-2a703e21ea0)
-- [standard definition](https://www.mathsisfun.com/data/standard-deviation.html)
+- [standard deviation](https://www.mathsisfun.com/data/standard-deviation.html)
 - [normal distribution](https://en.wikipedia.org/wiki/Normal_distribution)
 - [covariance](https://www.mathsisfun.com/data/covariance.html)
 - [r-squared](https://www.investopedia.com/terms/r/r-squared.asp)
