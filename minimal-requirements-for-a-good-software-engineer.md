@@ -248,7 +248,7 @@ These languages are good for their respective areas:
 - JavaScript for APIs and web applications
 - Dart for mobile apps
 - Python for data and for APIs/backend when speed is of lower importance
-- Julia for data if you also need speed and concurrency. It is also good for APIs with spikes due to its [coroutines](https://en.wikipedia.org/wiki/Tensor_Processing_Unit#Google_Tensor).
+- Julia for data if you also need speed and concurrency. It is also good for APIs with spikes due to its [coroutines](https://docs.julialang.org/en/v1/manual/asynchronous-programming/).
 
 ## Organization
 
