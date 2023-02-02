@@ -2,7 +2,7 @@
 
 There are multiple programming languages because they were designed for different uses and because languages evolve: better languages replace older languages.
 
-I will list by the area of use
+I will list by the area of use.
 
 ## Mobile Apps
 
@@ -71,11 +71,29 @@ So what do we have:
 
 I think that generally best option is Rust. But look at the specific considerations of your project. Don't be a "I am a JavaScript programmer" type of person.
 
+## Data
+
+Python is the default. If you need concurrency and speed, consider Julia.
+
 ## OS and Hardware
 
-TBC
+To interact directly with an OS or with hardware, a language of your choice needs to support this functionality. 
+Otherwise you will have to use C++. On Apple OSes it is Objective C.
+
+In some cases you will need C and Assembley, depending on an existing code and tools of an OS or hardware.
+
+## How to pick a language
+
+Important to pick a language that is suitable for a given task but also think about scaling out the performance, environments, size of code, size of the team.
+Keep an eye on languages, their features, implementations, usage but keep in mind that using multiple languages is an extra effort.
+Using rare languages may be a challenge for other engineers who will work with you, after you, for expanding a project, for making a project open source or even for selling it.
 
 ## Which languages cover most use cases
 
-## Best order for learning programming languages
+With JavaScipt, Python and C++ you can have a Web UI that can be accessed from mobile and desktop with a backend 
++ you can work on data + you can do desktop/OS/hardware level stuff (you might still need to dive into Objective C, C, Assembley)
+
+So I would master these 3 as reference and go-to but then still pick the best language for a project.
+
+Have fun!
 
