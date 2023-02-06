@@ -47,6 +47,8 @@ Design a simple language that has int, float, conditions, loops and functions.
 Then implement it. There are online articles that explain how to build your own lexer, parser, interpreter or compiler both from scratch and using existing products.
 Building anything from scratch in C is better for understanding how things work.
 
+[This](https://dev.to/evantypanski/writing-a-simple-programming-language-from-scratch-part-1-54a2) series of articles shows how to implement a new language in C++ step by step. Also check [ANTLR](https://www.antlr.org/) which has become the most popular and easiest way of constructing languages.
+
 ### Linux
 
 Learn how Linux manages
