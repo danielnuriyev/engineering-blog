@@ -20,11 +20,11 @@ JavaScript is the language of a browser.
 
 ## Desktop Apps
 
-- Windows: The language of choice in C# but you have more options as explained [here](https://learn.microsoft.com/en-us/windows/apps/get-started/?tabs=net-maui%2Ccpp-win32)
+- Windows: The language of choice is C# but you have more options as explained [here](https://learn.microsoft.com/en-us/windows/apps/get-started/?tabs=net-maui%2Ccpp-win32)
 - MacOS: Swift
 - Linux: depends on the desktop environment. Since the two mostly used ones are Xfce and GNOME, C is a safe bet. They have bindings for C++ which I recommend because small and simple projects sometimes grow in complexity and this is one of the reasons why C++ was invented. There are bindings for Python and JavaScript but once you learn how to code for Xfce and GNOME in C, you'll be able to do anything which is not necessarily the case for other languages.
 
-For all Operating Systems, you may need to lower in stack and use C++ or even C.
+For all Operating Systems, you may need to go lower in stack for some interactions with the OS and use C++, C or on Mac Objective C
 
 ## Backend
 
