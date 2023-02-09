@@ -52,7 +52,7 @@ Building anything from scratch in C is better for understanding how things work.
 ### Linux
 
 Learn how Linux manages
-- multiple processes and threads. Process and thread priority. Core affinity. How Linux handles a process & thread when it's doing IO. What hyperthreading is.
+- multiple [processes](https://docs.kernel.org/scheduler/sched-design-CFS.html) and threads. Process and thread priority. Core affinity. How Linux handles a process & thread when it's doing IO. What hyperthreading is.
 - memory
 - IO (devices and data)
 - file systems
