@@ -100,14 +100,16 @@ Docker is used to create an environment for coding and running stuff. For exampl
 Learn about the most commonly used Linux filesystems: their design, their purpose, when to use which.
 
 Learn about the types databases: 
-- relational (MariaDB) 
-- key/value (Memcached) 
-- document (MongoDB) 
+- relational (MariaDB)
+- document (MongoDB)
+- columnar (Cassandra)
 - data structures (Redis) 
-- columnar (Cassandra) 
+- key/value (Memcached) 
 - query engines (PrestoDB) 
 - graph (Neo4J)
 - search (ElasticSearch)
+- vector databases which are relevant for Machine Learning
+- blockchain (see below)
 
 Answer these questions for each:
 - how they store and retrieve
@@ -194,7 +196,7 @@ OO Design is a must for designing complex systems. Use C++ when you learn this. 
 
 ### Blockchain
 
-Blockchain is a buzz but also a complex of structures and algorithms that have useful applications. Not knowing the core concepts and possible applications is strange. Learn the structure of Bitcoin, why and for what it was designed, its shortcumming, how other blockchains try to resolve them, how blockchains are used besides currencies. As always, drill into the technical details.
+At its essence a blockchain is a distributed decentralized transaction log. This is why I listed it in Storage section. If you need to store all previous states of a record in an unmodifiable, verifiable, resilient and scaleable way, you can deploy the code of an existing blockchain, you'll just need to find a blockchain with features that you need.
 
 ### Statistics
 
