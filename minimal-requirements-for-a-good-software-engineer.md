@@ -108,7 +108,7 @@ Learn about the types databases:
 - query engines (PrestoDB) 
 - graph (Neo4J)
 - search (ElasticSearch)
-- vector databases which are relevant for Machine Learning
+- vector databases which are relevant for Machine Learning. [An explanation](https://www.pinecone.io/learn/vector-database/).
 - blockchain (see below)
 
 Answer these questions for each:
