@@ -109,6 +109,14 @@ Learn about the types databases:
 - graph (Neo4J)
 - search (ElasticSearch)
 - vector databases which are relevant for Machine Learning. [An explanation](https://www.pinecone.io/learn/vector-database/).
+  List of open source vactor databases not in a particular order:
+  - [Chroma](https://github.com/chroma-core/chroma)
+  - [Marqo](https://github.com/marqo-ai/marqo)
+  - [Milvus](https://github.com/milvus-io/milvus)
+  - [Qdrant](https://github.com/qdrant/qdrant)
+  - [Vald](https://github.com/vdaas/vald)
+  - [Vespa](https://github.com/vespa-engine/vespa)
+  - [Weaviate](https://github.com/weaviate/weaviate)
 - blockchain (see below)
 
 Answer these questions for each:
@@ -255,6 +263,14 @@ These languages are good for their respective areas:
 - Julia for data if you also need speed and concurrency. It is also good for APIs with spikes due to its [coroutines](https://docs.julialang.org/en/v1/manual/asynchronous-programming/).
 
 [Here](programming-languages.md) is more info.
+
+## AI
+
+Learn to use AI for coding.
+At the moment you can use 
+- GPT Engineer for generating a full application
+- ChatGPT, Open Assistant, Claude 2 and StarCoder for interactive coding of an app
+- Copilot and Hugging Face plugins for generating code snippets
 
 ## Organization
 
