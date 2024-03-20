@@ -243,7 +243,7 @@ You can learn ML as
 - as a data scientist: know how each step of the _ML Workflow_ works. For example, how to identify if data is suitable to be used for ML.
 - as an ML user: use a library that does everything for you.
 
-ML deserves a separate page. TBD +TPU/NPU
+ML deserves a separate page. TBD +TPU/NPU,LPU
 
 In addition, understand the difference between AI and ML.
 
@@ -267,10 +267,7 @@ These languages are good for their respective areas:
 ## AI
 
 Learn to use AI for coding.
-At the moment you can use 
-- GPT Engineer for generating a full application
-- ChatGPT, Open Assistant, Claude 2 and StarCoder for interactive coding of an app
-- Copilot and Hugging Face plugins for generating code snippets
+At the moment Gemini generates the best code.
 
 ## Organization
 
@@ -311,6 +308,7 @@ Know the current tech trends. At the moment these seem worthy:
 - 5G: learn how different it is from 4G, what new opportunities it opens
 - Quantum Computing: what it is on the physical level, how it can be used
 - Metaverses: keep an eye on them. At some point when companies start to cooperate on the network protocol and data format, we'll go 3D.
+- AI: learn the inner structure of the leading AI tech. Learn about the structure of hardware designed for neural networks and LLMs. Use it for coding and research.
 
 ## Beyond engineering
 
