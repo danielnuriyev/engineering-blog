@@ -266,8 +266,10 @@ These languages are good for their respective areas:
 
 ## AI
 
-Learn to use AI for coding.
-At the moment Gemini generates the best code.
+It is good to learn the inner structure of the leading AI tech. Otherwise you do not really know what it is. 
+It may also provide you with interesting job opportunities.
+
+Use an AI for coding and research. At the moment Gemini generates the best code.
 
 ## Organization
 
@@ -308,7 +310,7 @@ Know the current tech trends. At the moment these seem worthy:
 - 5G: learn how different it is from 4G, what new opportunities it opens
 - Quantum Computing: what it is on the physical level, how it can be used
 - Metaverses: keep an eye on them. At some point when companies start to cooperate on the network protocol and data format, we'll go 3D.
-- AI: learn the inner structure of the leading AI tech. Learn about the structure of hardware designed for neural networks and LLMs. Use it for coding and research.
+- AI
 
 ## Beyond engineering
 
