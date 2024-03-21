@@ -5,6 +5,7 @@ They seem numerous but without them you will be like those who did not even know
 You do not need to become an expert in each topic, just getting the figers dirty is enough in some of them.
 The list is divided into Technologies, Math, Languages, Organization,  Trends, Beyond Engineering.
 
+But before you start reading, I must answer the natural question of whether it is necessary to be an engineer in the nearing age of AGI or specialized AI. The secret sauce of being an engineer is not in creating new things but in creating new things efficiently. It is possible to train a model to choose the suitable technology and to code efficiently. And it is possible that at some point such models will not need human involvement. So, maybe long term there won't be a need in human mathematicians and coders. Although another part of me says that we will always want to keep an eye on the machines and to do so, we need to be good mathematicians, scientists and engineers with the help of machines in areas where they can help us with their speed and access to information.
 
 ## Technologies
 
