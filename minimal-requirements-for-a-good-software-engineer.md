@@ -191,7 +191,7 @@ Learn how negative and floating point numbers are represented in commonly used p
 
 CS is the mathematical principles for designing efficient technologies.
 
-To get the flavor of what I mean study how the core data structures are implemented in C: array, linked list, hash map, trees, graphs.
+To get the flavor of what I mean study how the core data structures are implemented in C: array, linked list, hash map, trees, graphs, probabilistic data structures.
 
 Learn how to calculate the time to add an element and to find an element using big O notation.
 
@@ -202,6 +202,8 @@ Any good design must use math. Otherwise it has unexpected consequences.
 ### Object Oriented
 
 OO Design is a must for designing complex systems. Use C++ when you learn this. There are languages with better OO design but C++ is a good first step in this direction after C.
+
+Learn "design patterns". There are also non OO design patterns.
 
 ### Blockchain
 
