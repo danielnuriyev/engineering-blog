@@ -80,11 +80,11 @@ To build the platform we need:
 - OS: your development, testing and production environments should be the same. Most likely you'll use docker with some Linux flavor.
 - shell languge: zsh has more programming and interactive features and is the standard on Mac.
 - programming language: Python is tha language of data. Use type annotations with a linter. Since version 3.12 it can even run OS threads in parallel using `interpreters` module. But it is relatively slow even when using modules implemented in C. Nevertheless usually multi-step pipeline that pipe large amounts of data lose performance in other places.
-- execution envoronment: k8s. Each cloud has its implementation. Use Docker Desktop or `kind` for local development.
+- execution envoronment: k8s. Each cloud has its implementation. I'd use Docker Desktop or `kind` for local development.
 - CICD: if you use GitHUb, use GitHub Action Runners.
 - cloud: AWS is the oldest and mostly used. Google and Azure may be good due to the ecosystem of their tools with integrated 'AI'.
 - communication: Slack unless you have reasons to prefer something else.
-- data exploration tools depend on your data scientists and the cloud. I have found cloud based notebooks useful. Especially combined with Dask or Spark. The implementation of Spark also depends on the cloud or on the desire and budget to use DataBricks.
+- data exploration tools depend on your data scientists and the cloud. I have found cloud based notebooks useful due to the speed. Especially combined with Dask or Spark. The implementation of Spark also depends on the cloud or on the desire and budget to use DataBricks.
 - data catalog + visualization depend on the cloud. For AWS it is better to used your own or paid DataHub + Tableau.
 
 
