@@ -1,8 +1,6 @@
-WIP
-
 # How to build a data platform
 
-## Requirements
+## Features
 
 ### Pipelines
 
@@ -71,3 +69,23 @@ The following processes should be established:
 Each process should have the corresponding tooling and documentation.
 
 IMPORTANT: process is a means, not the goal. Processes should be reviewed and adjusted
+
+## Technical requirements
+
+To build the platform we need:
+- version control: GitHub is the default unless you have reasons to prefer other git providers or alternatives.
+- orchestration: Dagster. The alternative Argo, Airflow, Prefect are worse for data pipelines in my opinion but do your research.
+- query engine: depends on the cloud. Snowflake is cross cloud. Trino is an option for local development, can be deployed to any cloud but then you are responsible for it, exists in AWS as Athena.
+- IaC: pulumi is cross cloud + can deploy code to a local k8s cluster.
+- OS: your development, testing and production environments should be the same. Most likely you'll use docker with some Linux flavor.
+- shell languge: zsh has more programming and interactive features and is the standard on Mac.
+- programming language: Python is tha language of data. Use type annotations with a linter. Since version 3.12 it can even run OS threads in parallel using `interpreters` module. But it is relatively slow even when using modules implemented in C. Nevertheless usually multi-step pipeline that pipe large amounts of data lose performance in other places.
+- execution envoronment: k8s. Each cloud has its implementation. Use Docker Desktop or `kind` for local development.
+- CICD: if you use GitHUb, use GitHub Action Runners.
+- cloud: AWS is the oldest and mostly used. Google and Azure may be good due to the ecosystem of their tools with integrated 'AI'.
+- communication: Slack unless you have reasons to prefer something else.
+- data exploration tools depend on your data scientists and the cloud. I have found cloud based notebooks useful. Especially combined with Dask or Spark. The implementation of Spark also depends on the cloud or on the desire and budget to use DataBricks.
+- data catalog + visualization depend on the cloud. For AWS it is better to used your own or paid DataHub + Tableau.
+
+
+
