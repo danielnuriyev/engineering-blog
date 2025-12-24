@@ -85,7 +85,7 @@ To build the platform we need:
 - cloud: AWS is the oldest and mostly used. Google and Azure may be good due to the ecosystem of their tools with integrated 'AI'.
 - communication: Slack unless you have reasons to prefer something else.
 - data exploration tools depend on your data scientists and the cloud. I have found cloud based notebooks useful due to the speed. Especially combined with Dask or Spark. The implementation of Spark also depends on the cloud or on the desire and budget to use DataBricks.
-- data catalog + visualization depend on the cloud. For AWS it is better to used your own or paid DataHub + Tableau.
+- data catalog + visualization depend on the cloud. For AWS it is better to use your own or paid DataHub + Tableau.
 
 
 
