@@ -10,3 +10,4 @@ I would like to write about these topics:
 - How to interview
 - Where the technology is headed
 - Basic data science skills
+- [How to build a data platform](./data-platform.md)
