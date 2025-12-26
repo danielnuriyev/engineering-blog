@@ -59,12 +59,17 @@ Any element of the platform that can be hacked from outside, from within the cod
 
 ### Processes
 
-The following processes should be established:
+The following processes should be established
 - development of the platform from idea to deployment. In addition to the technical aspects such as code style and structure, documentation, testing, review, deployment, monitoring, performance, resilience, scale, disaster recovery but also cost and security.
 - monitoring the platform and addressing production issues
 - process for users who want to participate in the development of the platform and thus a process for each type of users
 - processes to support each type of users
-- data participants who are part of a single data organization there should be an established process for hiring and development for each type of data participant including not only purely professional aspects but also how people interact with each other to make the environment supportive and cooperative.
+- data participants who are part of a single data organization there should be an established process for hiring and development for each type of data participant including not only purely professional aspects but also how people interact with each other to make the environment supportive and cooperative
+
+#### Governance and Security
+
+- process and tools for establishing and enforcing the data standards such as naming of databases, tables, columns
+- process for claassifying data, where each tier is stored and who can have, approve, provide and monitor access
 
 Each process should have the corresponding tooling and documentation.
 
