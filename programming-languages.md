@@ -80,6 +80,8 @@ Python is the default. If you need concurrency and speed, consider Julia.
 
 Scripting requires simple code. Usually performance is not required. Python is the best.
 
+For Shell scripting I prefer zsh as it has more features.
+
 ## OS and Hardware
 
 To interact directly with an OS or with hardware, a language of your choice needs to support this functionality. 
