@@ -54,14 +54,13 @@ Above I did not filter out Kotlin and JavaScript but they have flaws. Let's a lo
 
 The only language that matches these requirements is Go but although it has interfaces and a way to extend them, practically, after having used OO languages mentioned above, I found it clumsy to implement an extensible design. 
 
-Next candidates are Julia and Rust. Their only flaw is that like JavaScript and Kotlin they do not handle a stuck thread but 
-- compared to Kotlin, they do not use too much memory
-- compared to JavaScript, they are not limited in memory
+Next candidate is Rust. Its only flaw is that like JavaScript and Kotlin it does not handle a stuck thread but 
+- compared to Kotlin, it does not use too much memory
+- compared to JavaScript, it is not limited in memory
 
 So what do we have:
 - Kotlin is generally good but you need to keep an eye on the memory and programmatically prevent hang-ups using `yield`.
 - JavaScript is good for microservices where each event queue can use up to 1.5GB of memory. Beware of unexpected CPU (non-IO) bottlenecks.
-- Julia is generally good but not as popular, and you may need to programmatically prevent hang-ups using `yield`
 - Go for massively concurrent code but low complexity.
 - Rust is generally good, not so popular but more popular for backend than Julia, and unlike Julia it was designed for the backend, but you may need to programmatically prevent hang-ups using `yield`
 - Python
@@ -69,11 +68,17 @@ So what do we have:
   - do not need concurrency inside a single process, for example, when you use AWS Lambda
   - code that uses CPU does not need to be blazingly fast
 
-I think that generally best option is Rust. But look at the specific considerations of your project. Don't be a "I am a JavaScript programmer" type of person.
+The generally best option is Rust. I would still use Go for a high throughput API. But look at the specific considerations of your project. Don't be a "I am a JavaScript programmer" type of person.
+
+One rarely used language worth mentioning is Raku (Perl 6). Together with Rust it is great for long running backend processes with complex code but it does not have corporate support nor does they have a comparably large number of developers and users.
 
 ## Data
 
 Python is the default. If you need concurrency and speed, consider Julia.
+
+## Scripting
+
+Scripting requires simple code. Usually performance is not required. Python is the best.
 
 ## OS and Hardware
 
