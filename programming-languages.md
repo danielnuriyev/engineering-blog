@@ -30,10 +30,10 @@ For all Operating Systems, you may need to go lower in stack for some interactio
 
 Backend APIs and workers can be developed in all languages listed above but they have inherent flaws:
 - Dart is the best choice for cross platform mobile apps but the language runs within JavaScript constraints, so why not just use JavaScript
-- JavaScipt is a good choice. A single nodejs process can handle multiple concurrent requests by placing them on a queue. The queue is handled by a single OS thread. This works well if you have access to multiple 1 core machines, otherwise it's worth spawning at least 1 nodejs process per core depending on % of CPU time vs IO time. The flaw of JavaScript/NodeJs is that if for whatever reason a single request takes much of CPU (non-IO) time, the whole queue will wait. To be on the safe side it is better to use languages that utilize multiple cores and identify stuck functions, like Go does. More about this later. Another flaw is that a nodejs process is limited to 1.5GB of memory. If you need more, JavaScript is not for you.
 - Kotlin runs on JVM whose flaws are: impossible to kill a stuck Thread, the amount of memory it uses is orders of magnitude greater than the actual data. But it does utilize multiple cores, so in this respect it is better than NodeJS.
 - Swift is designed of Apple OSes. Most probably your backend API will be on a Linux. There is a way to run Swift on Linux but why.
 - C++ and C are too low level. You will have to code things that JavaScript, Kotlin and other engineers are not even aware of.
+- JavaScipt is a good choice. A single nodejs process can handle multiple concurrent requests by placing them on a queue. The queue is handled by a single OS thread. This works well if you have access to multiple 1 core machines, otherwise it's worth spawning at least 1 nodejs process per core depending on % of CPU time vs IO time or using worker threads. The flaw of JavaScript/NodeJs is that if for whatever reason a single request takes much of CPU (non-IO) time, the whole queue will wait. To be on the safe side it is better to use languages that utilize multiple cores and identify stuck functions, like Go does. More about this later. Another flaw is that a nodejs process is limited to 1.5GB of memory. If you need more, JavaScript is not for you.
 - .NET languages is a story similar to Swift.
 
 Now let's pick a good language for the backend.
@@ -50,20 +50,20 @@ Ideally, tt should:
 
 There are more features but these are the ones that differentiate backend languages.
 
-Above I did not filter out JavaScript and Kotlin but they have flaws. Let's a look at more languages.
+Above I did not filter out Kotlin and JavaScript but they have flaws. Let's a look at more languages.
 
 The only language that matches these requirements is Go but although it has interfaces and a way to extend them, practically, after having used OO languages mentioned above, I found it clumsy to implement an extensible design. 
 
 Next candidates are Julia and Rust. Their only flaw is that like JavaScript and Kotlin they do not handle a stuck thread but 
-- compared to JavaScript, they are not limited in memory
 - compared to Kotlin, they do not use too much memory
+- compared to JavaScript, they are not limited in memory
 
 So what do we have:
-- JavaScript is good for microservices where each event queue can use up to 1.5GB of memory. Beware of unexpected CPU (non-IO) bottlenecks.
-- Go for massively concurrent code but low complexity.
-- Julia is generally good but not as popular, and you may need to programmatically prevent hang-ups using `yield`
-- Rust is generally good, not so popular but more popular for backend than Julia, and unlike Julia it was designed for the backend, but you may need to programmatically prevent hang-ups using `yield`
 - Kotlin is generally good but you need to keep an eye on the memory and programmatically prevent hang-ups using `yield`.
+- JavaScript is good for microservices where each event queue can use up to 1.5GB of memory. Beware of unexpected CPU (non-IO) bottlenecks.
+- Julia is generally good but not as popular, and you may need to programmatically prevent hang-ups using `yield`
+- Go for massively concurrent code but low complexity.
+- Rust is generally good, not so popular but more popular for backend than Julia, and unlike Julia it was designed for the backend, but you may need to programmatically prevent hang-ups using `yield`
 - Python
   - if you want to code quickly
   - do not need concurrency inside a single process, for example, when you use AWS Lambda
