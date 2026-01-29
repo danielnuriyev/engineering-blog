@@ -74,7 +74,7 @@ One rarely used language worth mentioning is Raku (Perl 6). Together with Rust i
 
 ## Data
 
-Python is the default. If you need concurrency and speed, consider Julia.
+Python is the default.
 
 ## Scripting
 
