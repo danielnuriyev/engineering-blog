@@ -1,6 +1,6 @@
 # Engineering Blog
 
-I would like to write about these topics:
+I need to think about the following topics in the context of coding agents.
 
 - [Difference between a computer scientist and an engineer](./cs-vs-eng.md)
 - [Minimal requirements for being a good software engineer](./minimal-requirements-for-a-good-software-engineer.md)
