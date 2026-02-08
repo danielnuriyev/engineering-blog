@@ -1,3 +1,9 @@
+---
+layout: page
+title: "Useful Programming Languages"
+permalink: /programming-languages/
+---
+
 # Useful Programming Languages
 
 There are multiple programming languages because they were designed for different uses and because languages evolve: better languages replace older languages.

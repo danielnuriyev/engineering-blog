@@ -1,0 +1,25 @@
+title: Engineering Blog
+description: Thoughts on software engineering, data platforms, and technology
+theme: jekyll-theme-midnight
+
+# Jekyll configuration
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - .bundle/
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - .bundle
+  - README.md
+  - _posts/

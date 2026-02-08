@@ -1,3 +1,9 @@
+---
+layout: page
+title: "Minimal requirements for being a good software engineer"
+permalink: /minimal-requirements/
+---
+
 # Minimal requirements for being a good software engineer
 
 I list the core pieces of knowledge and basic skills that you need to start being a good engineer.

@@ -1,3 +1,9 @@
+---
+layout: page
+title: "What is Data Engineering versus Data Analytics and Data Science"
+permalink: /data-engineering/
+---
+
 # What is Data Engineering versus Data Analytics and Data Science
 
 This should clarify the confusion of terms

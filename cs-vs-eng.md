@@ -1,3 +1,9 @@
+---
+layout: page
+title: "Difference between a computer scientist and an engineer"
+permalink: /cs-vs-eng/
+---
+
 # Difference between a computer scientist and an engineer
 
 ## Difference 1

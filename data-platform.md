@@ -1,3 +1,9 @@
+---
+layout: page
+title: "How to build a data platform"
+permalink: /data-platform/
+---
+
 # How to build a data platform
 
 ## Features
