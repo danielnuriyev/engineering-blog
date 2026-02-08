@@ -4,8 +4,6 @@ title: "How to build a data platform"
 permalink: /data-platform/
 ---
 
-# How to build a data platform
-
 ## Features
 
 ### Pipelines
@@ -84,21 +82,21 @@ IMPORTANT: process is a means, not the goal. Processes should be reviewed and ad
 ## Technical requirements
 
 To build the platform we need:
-- version control: GitHub is the default unless you have reasons to prefer other git providers or alternatives.
-- orchestration: Dagster. The alternative Argo, Airflow, Prefect are worse for data pipelines in my opinion but do your research.
-- query engine: depends on the cloud. Snowflake is cross cloud. Trino is an option for local development, can be deployed to any cloud but then you are responsible for it, exists in AWS as Athena.
-- IaC: pulumi is cross cloud + can deploy code to a local k8s cluster.
-- OS: your development, testing and production environments should be the same. Most likely you'll use docker with some Linux flavor.
-- shell languge: zsh has more programming and interactive features and is the standard on Mac.
-- programming language: Python is tha language of data. Use type annotations with a linter. Since version 3.12 it can even run OS threads in parallel using `interpreters` module. But it is relatively slow even when using modules implemented in C. Nevertheless usually multi-step pipeline that pipe large amounts of data lose performance in other places. If you do need speed consider using JS, Julia, Rust but to allow more users to be involved in the development of platform I would allow creation of data sources, transformations, sinks, conditions, checks to be implemented in Python.
-- execution envoronment: k8s. Each cloud has its implementation. I'd use Docker Desktop or `kind` for local development.
-- CICD: if you use GitHUb, use GitHub Action Runners.
-- cloud: AWS is the oldest and mostly used. Google and Azure may be good due to the ecosystem of their tools with integrated 'AI'.
-- communication: Slack unless you have reasons to prefer something else.
-- data exploration tools depend on your data scientists and the cloud. I have found cloud based notebooks useful due to the speed. Especially combined with Dask or Spark. The implementation of Spark also depends on the cloud or on the desire and budget to use DataBricks.
-- data catalog + visualization depend on the cloud. For AWS it is better to use your own or paid DataHub + Sigma Computing / ThoughtSpot / Tableau
+- **version control:** GitHub is the default unless you have reasons to prefer other git providers or alternatives.
+- **orchestration:** Dagster. The alternative Argo, Airflow, Prefect are worse for data pipelines in my opinion but do your research.
+- **query engine:** depends on the cloud. Snowflake and Spark/Databricks are cross cloud. Spark andTrino are options for local development, can be deployed to any cloud but then you are responsible for it. Trino exists in AWS as Athena.
+- **IaC:** pulumi is cross cloud + can deploy code to a local k8s cluster.
+- **OS:** your development, testing and production environments should be the same. Most likely you'll use docker with some Linux flavor.
+- **shell languge:** zsh has more programming and interactive features and is the standard on Mac.
+- **programming language:** Python is tha language of data. Use type annotations with a linter. Since version 3.12 it can even run OS threads in parallel using `interpreters` module. But it is relatively slow even when using modules implemented in C. Nevertheless usually multi-step pipeline that pipe large amounts of data lose performance in other places. If you do need speed consider a compiled language (Rust, Go, Swift) or a language with a JIT compiler (JS, Java, C#, Raku) but to allow more users to be involved in the development of platform I would allow creation of data sources, transformations, sinks, conditions, checks to be implemented in Python.
+- **execution envoronment:** k8s. Each cloud has its implementation. I'd use Docker Desktop or `kind` for local development.
+- **CICD:** if you use GitHUb, use GitHub Action Runners.
+- **cloud:** AWS is the oldest and mostly used. Google and Azure may be good due to the ecosystem of their tools with integrated 'AI'.
+- **communication:** Slack unless you have reasons to prefer something else.
+- **data exploration tools** depend on your data scientists and the cloud. I have found cloud based notebooks useful due to the speed. Especially combined with Dask or Spark. The implementation of Spark also depends on the cloud or on the desire and budget to use DataBricks.
+- **data catalog + visualization** depend on the cloud. For AWS it is better to use your own or paid DataHub + Sigma Computing / ThoughtSpot / Tableau
   - beware of keeping your business login in one of these tools. It is better to keep your business logic in pipepines whose code is in a version control system like Git and use the tools for visualization only
-- coding environment should give you the choice of all available AI models. Use the cheapest and quick for most tasks + the most expensive and slow for complex tasks. I personally use Cursor with Grok for most tasks + Opis for the complex ones.
+- **coding** environment should give you the choice of all available AI models. Use the cheapest and quick for most tasks + the most expensive and slow for complex tasks. I personally use Cursor with Grok for most tasks + Opis for the complex ones.
 
 
 
