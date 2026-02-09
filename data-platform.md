@@ -84,7 +84,7 @@ IMPORTANT: process is a means, not the goal. Processes should be reviewed and ad
 To build the platform we need:
 - **version control:** GitHub is the default unless you have reasons to prefer other git providers or alternatives.
 - **orchestration:** Dagster. The alternative Argo, Airflow, Prefect are worse for data pipelines in my opinion but do your research.
-- **query engine:** depends on the cloud. Snowflake and Spark/Databricks are cross cloud. Spark andTrino are options for local development, can be deployed to any cloud but then you are responsible for it. Trino exists in AWS as Athena.
+- **query engine:** depends on the cloud. Snowflake, Spark/Databricks, Starburst are cross cloud. Spark and Trino are options for local development, can be deployed to any cloud but then you are responsible for it. Trino exists in AWS as Athena.
 - **IaC:** pulumi is cross cloud + can deploy code to a local k8s cluster.
 - **OS:** your development, testing and production environments should be the same. Most likely you'll use docker with some Linux flavor.
 - **shell languge:** zsh has more programming and interactive features and is the standard on Mac.
