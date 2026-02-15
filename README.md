@@ -1,6 +1,6 @@
 # Engineering Blog
 
-This is a Jekyll blog using the midnight theme, containing thoughts on software engineering, data platforms, and technology.
+This is a blog containing thoughts on software engineering, data platforms, and technology.
 
 ## Topics Covered
 
