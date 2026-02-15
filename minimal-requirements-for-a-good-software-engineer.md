@@ -278,7 +278,7 @@ These languages are good for their respective areas:
 It is good to learn the inner structure of the leading AI tech. Otherwise you do not really know what it is. 
 It may also provide you with interesting job opportunities.
 
-Use an AI for coding and research.
+Use an AI for research and coding. Learn to build and use AI agent swarms.
 
 ## Organization
 
