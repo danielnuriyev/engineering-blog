@@ -8,7 +8,7 @@ permalink: /programming-languages/
 
 There are multiple programming languages because they were designed for different uses and because languages evolve.
 
-I will list them by the area of use.
+I will list them by the area of use or you can skip to the conclusion in the bottom.
 
 ## Mobile Apps
 
