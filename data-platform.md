@@ -103,6 +103,8 @@ An important consideration is whether you will need to process data in a program
 This may be needed for ML or other use cases where SQL, even with User Defined Functions, is insufficient.
 In this case the best choice is Spark.
 
+## Summary
+
 At this point if I have to plan a generic data platform, I will design it around Spark 
 because it will cover more use cases than the listed alternatives.
 If I have a budget, I will use Databricks because it provides most of the listed functionality.
