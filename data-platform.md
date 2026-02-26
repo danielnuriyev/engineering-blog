@@ -6,6 +6,8 @@ permalink: /data-platform/
 
 ## Features
 
+You can skip to the Summary.
+
 ### Pipelines
 
 - It should be simple to add a custom data source, transformation and sink
