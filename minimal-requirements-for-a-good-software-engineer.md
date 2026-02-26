@@ -262,14 +262,13 @@ I recommend learning these languages no matter what:
 
 - Assembley: if you haven't tried Assembley, you do not know how a computer works.
 - C: if you haven't coded in C, you do not know how software actually works.
-- C++: low level OO language used for firmware and for speed
+- C++: low level OO language used for firmware, kernel space code, speed. Most other common languages are responses to the flexibility of C++.
 
-These languages are good for their respective areas:
-
-- JavaScript for APIs and web applications
-- Dart for mobile apps
-- Python for data and for APIs/backend when speed is of lower importance
-- Julia for data if you also need speed and concurrency. It is also good for APIs with spikes due to its [coroutines](https://docs.julialang.org/en/v1/manual/asynchronous-programming/).
+Other:
+- Zig is a response to the complexity of C.
+- Rust is the response to the complexity of C++ and increasinlgly more engineers prefer Rust where C++ used to be the choice.
+- JavaScript is a language using which one can develop a web app and then wrap it as a PWA and install it on a smartphone and desktop, a backend service, work with data using polaris/pyarrow (but not spark yet) and maybe more based on the availability of NodeJS/Deno/Bun plugins (most likely implemented in languages isted above). It may be not the ideal candidate for each of the mentioned uses but it's worth learning it as it coveres such a broad range.
+- Python for data, scripting and for backend when speed is of lower importance.
 
 [Here](programming-languages.md) is more info.
 
