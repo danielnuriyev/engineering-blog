@@ -187,6 +187,8 @@ Nowadays most Web Applications are built using frameworks such as [ReactJS](http
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript), including [NodeJS](https://nodejs.org/en/)
 - [WebSocket](https://github.com/websockets/ws), also [this](https://socket.io/) and [this](https://www.npmjs.com/package/react-use-websocket)
 
+It is worth mentioning that ReactJS is not the only web framework. In many cases a way simpler [Svelte](https://svelte.dev/) will suffice.
+
 ## Math
 
 ### Binary stuff
