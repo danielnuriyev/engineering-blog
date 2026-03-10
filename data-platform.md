@@ -95,16 +95,16 @@ To build the platform we need:
 - **IaC:** pulumi is cross cloud + can deploy code to a local k8s cluster.
 - **OS:** your development, testing and production environments should be the same. Most likely you'll use docker with some Linux flavor.
 - **shell languge:** zsh has more programming and interactive features and is the standard on Mac.
-- **programming language:** Python is tha language of data. Use type annotations with a linter. Since version 3.12 it can even run OS threads in parallel using `interpreters` module. But it is relatively slow even when using modules implemented in C. Nevertheless usually multi-step pipeline that pipe large amounts of data lose performance in other places. If you do need speed consider Spark because it run on JVM's JIT.
+- **programming language:** Python is tha language of data. Use type annotations with a linter. Since version 3.12 it can even run OS threads in parallel using `interpreters` module. But it is relatively slow even when using modules implemented in C. Nevertheless usually multi-step pipeline that pipe large amounts of data lose performance in other places. If you do need speed consider Spark because it runs on JVM's JIT.
 - **ML**: if you choose Spark, keep in mind that not every ML algorithm is parallelizeable.
 - **execution envoronment:** k8s. Each cloud has its implementation. I'd use Docker Desktop or `kind` for local development.
 - **CICD:** if you use GitHUb, use GitHub Action Runners.
 - **cloud:** AWS is the oldest and mostly used. Google and Azure may be good due to the ecosystem of their tools with integrated 'AI'.
 - **communication:** Slack unless you have reasons to prefer something else.
 - **data exploration tools** depend on your data scientists and the cloud. I have found cloud based notebooks useful due to the speed. Especially combined with Dask or Spark. The implementation of Spark also depends on the cloud or on the desire and budget to use DataBricks.
-- **data catalog + visualization** depend on the cloud. For AWS it is better to use your own or paid DataHub + Sigma Computing / ThoughtSpot / Tableau
-  - beware of keeping your business login in one of these tools. It is better to keep your business logic in pipepines whose code is in a version control system like Git and use the tools for visualization only
-- **coding** environment should give you the choice of all available AI models. Use the cheapest and quick for most tasks + the most expensive and slow for complex tasks. I personally use Cursor with Grok for most tasks + Opis for the complex ones.
+- **data catalog + visualization** depend on the cloud. For AWS it is better to use your own or paid DataHub + Metabase / Sigma Computing / ThoughtSpot / Tableau
+  - beware of keeping your business logic in one of these tools. It is better to keep your business logic in pipepines whose code is in a version control system like Git and use the tools for visualization only
+- **coding** environment should give you the choice of all available AI models. Use the cheapest and quick for most tasks + the most expensive and slow for complex tasks. I personally use Cursor with Grok for most tasks + Gemini for more complex ones.
 
 An important consideration is whether you will need to process data in a programming language instead of SQL. 
 This may be needed for ML or other use cases where SQL, even with User Defined Functions, is insufficient.
