@@ -79,7 +79,12 @@ The following processes should be established
 
 Each process should have the corresponding tooling and documentation.
 
-IMPORTANT: process is a means, not the goal. Processes should be reviewed and adjusted
+IMPORTANT: process is a means, not the goal. Processes should be reviewed and adjusted.
+
+#### Disaster Recovery
+
+- Backing up of data at all tiers should be a part of the platform. It should be a flag because in practice not everything needs to be backed up.
+- Everything should be easy to deploy and roll back, ideally in at least 2 data centers (regions).
 
 ## Technical requirements
 
