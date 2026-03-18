@@ -8,6 +8,8 @@ permalink: /data-platform/
 
 You can skip to the Summary.
 
+![data platform diagram](./diagram-wide.png)
+
 ### Pipelines
 
 - It should be simple to add a custom data source, transformation and sink
