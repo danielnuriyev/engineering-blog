@@ -92,19 +92,26 @@ IMPORTANT: process is a means, not the goal. Processes should be reviewed and ad
 
 To build the platform we need:
 - **version control:** GitHub is the default unless you have reasons to prefer other git providers or alternatives.
-- **orchestration:** Dagster. The alternative Argo, Airflow, Prefect are worse for data pipelines in my opinion but do your research.
-- **query engine:** depends on the cloud. Snowflake, Spark/Databricks, Starburst are cross cloud. Spark and Trino are options for local development, can be deployed to any cloud but then you are responsible for it. Trino exists in AWS as Athena.
+- **orchestration:** Dagster. The alternative Airflow and Prefect are catching up for data. Do your research. They have paid cloud versions.
+- **ingestion**: Airbyte
+- **query engine:** depends on the cloud. Snowflake and Starburst/Trino are cross cloud. Trino is an option for local development, can be deployed to any cloud but then you are responsible for it. Trino exists in AWS as Athena.
 - **IaC:** I prefer Pulumi's programmability over Terraform
 - **OS:** your development, testing and production environments should be the same. Most likely you'll use docker with some Linux flavor.
 - **shell languge:** zsh has more programming and interactive features and is the standard on Mac.
-- **programming language:** Python is tha language of data. Use type annotations with a linter. Since version 3.12 it can even run OS threads in parallel using `interpreters` module. But it is relatively slow even when using modules implemented in C. Nevertheless usually multi-step pipeline that pipe large amounts of data lose performance in other places. If you do need speed consider Spark because it runs on JVM's JIT.
+- **programming language:** Python is the language of data. Use type annotations with a linter. Since version 3.12 it can even run OS threads in parallel using `interpreters` module. But it is relatively slow even when using modules implemented in C. Nevertheless usually multi-step pipelines that pipe large amounts of data lose performance in other places. If you do need speed, consider Spark because it runs on JVM's JIT.
 - **ML**: if you choose Spark, keep in mind that not every ML algorithm is parallelizeable. For serving models through APIs, you can save a model as ONNX, code the API in Go to handle spikes + use your cloud's load balancer and registry.
-- **execution envoronment:** k8s. Each cloud has its implementation. I'd use Docker Desktop or `kind` for local development. For monitoring you can instal Fluent Bit with Elastic Search and Kibana.
+- **execution envoronment:** k8s. Each cloud has its implementation. I'd use Docker Desktop with `kind` for local development. For monitoring you can install Fluent Bit with Elastic Search and Kibana. Your cloud likely offers an Elastic Search service.
 - **secrets**: if you want to go cross cloud, use Infisical
 - **CICD:** if you use GitHUb, use GitHub Action Runners.
 - **cloud:** AWS is the oldest and mostly used. Google and Azure may be good due to the ecosystem of their tools with integrated 'AI'.
 - **communication:** Slack unless you have reasons to prefer something else.
-- **data exploration tools** depend on your data scientists and the cloud. I have found cloud based notebooks useful due to the speed. Especially combined with Dask or Spark. The implementation of Spark also depends on the cloud or on the desire and budget to use DataBricks.
-- **data catalog + visualization** depend on the cloud. For AWS it is better to use your own or paid DataHub + Metabase / Sigma Computing / ThoughtSpot / Tableau
+- **data exploration tools** depend on your data scientists and the cloud. I have found Jupyter Hub deployed into my cloud account useful because your code can keep running, use more resources and data loads faster, especially combined with Dask or Spark. The implementation of Spark also depends on the cloud or on the desire and budget to use DataBricks.
+- **data catalog + visualization** depend on the cloud. For AWS it is better to use your own or paid DataHub + Metabase / Sigma Computing / ThoughtSpot
   - beware of keeping your business logic in one of these tools. It is better to keep your business logic in pipepines whose code is in a version control system like Git and use the tools for visualization only
-- **coding** environment should give you the choice of all available AI models. Use the cheapest and quick for most tasks + the most expensive and slow for complex tasks. I personally use Cursor with Grok for most tasks + Gemini for more complex ones.
+- **coding** environment should give you the choice of all available AI models/agents. Use the cheapest and quick for most tasks + the most expensive and slow for complex tasks.
+
+## Quick recommendation
+
+If you have money, go with GitHub + Pulumi + Astronomer + Airbyte + Snowflake + Slack + Opus on a cloud. Snowflake is not only a query engine, it is also a development environment, a code execution environment, it has a data catalog, built-in AI assistance.
+
+Otherwise use your cloud's versions of the open source products mentioned above.
