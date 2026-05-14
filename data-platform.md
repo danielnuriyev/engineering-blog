@@ -104,7 +104,7 @@ To build the platform we need:
 - **secrets**: if you want to go cross cloud, use Infisical
 - **CICD:** if you use GitHUb, use GitHub Action Runners.
 - **cloud:** AWS is the oldest and mostly used. Google and Azure may be good due to the ecosystem of their tools with integrated 'AI'.
-- **communication:** Slack unless you have reasons to prefer something else.
+- **communication:** Slack or self hosted Mattermost
 - **data exploration tools** depend on your data scientists and the cloud. I have found Jupyter Hub deployed into my cloud account useful because your code can keep running, use more resources and data loads faster, especially combined with Dask or Spark. The implementation of Spark also depends on the cloud or on the desire and budget to use DataBricks.
 - **data catalog + visualization** depend on the cloud. For AWS it is better to use your own or paid DataHub + Metabase / Sigma Computing / ThoughtSpot
   - beware of keeping your business logic in one of these tools. It is better to keep your business logic in pipepines whose code is in a version control system like Git and use the tools for visualization only
