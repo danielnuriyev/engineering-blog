@@ -4,36 +4,110 @@ title: "How to build a data platform"
 permalink: /data-platform/
 ---
 
-## Features
+# Features
 
 You can skip to the Summary.
 
 ![data platform diagram](./diagram-wide.png)
 
-### Pipelines
+## Pipelines
 
-- It should be simple to add a custom data source, transformation and sink
-- It should be possible control the throughput of a pipeline in order not to overload sources/destinations
-- A data pipeline should allow conditions, branching, fanning out/in
-- It should be possible to run data pipelines both on schedules and as dependencies on other pipelines
-- It should be possible to provide custom logic for error handling
-- It should be easy to deploy multiple copies of the platform for disaster recovery, testing and development
-- Testing should be as close to production as possible in structure, resources and data
-- The platform should be designed to scale X100 without a redesign
-- Monitoring should be good enough to see the history, the current state, what runs next and should be helpful in debugging
-  
-### Storage
+- **Ingestion**: Ability to implement any source and destination
+- **Transformation**:
+  - Ability to transform data in ANSI SQL and Python
+  - Python transformations should be able to run on a cluster either as distributed dataframes or concurrent batches
+- Ability to build a pipeline using AI
 
-It is convenient to store data so that it will be possible to query it using standard SQL from common data tools.
+## Orchestration of Schedules and Dependencies
 
-### Tools
+- Ability to assign at least one schedule to a pipeline
+- Ability to implement custom dependency logic
+- Ability to allocate resources (CPUs, memory) per pipeline or groups of pipelines
+- Ability to scale up/down automatically and programmatically
+- Ability to prioritize a pipeline or groups of pipelines
+- Ability to test downstream effects of a change
+- Ability to build and test using AI
 
-A platform should make it easy to:
-- find data
-- explore it
-- visualize it
+## Query Engine
 
-### Participants
+- ANSI SQL support
+- Custom functions in:
+  - Python (ease of use)
+  - Dynamically compiled language (performance)
+- Ability to scale up/down automatically and programmatically
+- Multitenancy support
+
+## Data Catalog
+
+- Table & column descriptions and ownership (technical + content owners)
+- Lineage tracking
+- Automatic metadata generation:
+  - Last refresh time
+  - Usual refresh cadence
+  - Rich data types (e.g., "addresses" instead of just "string")
+  - Data shape / profile
+- Strong search capabilities
+- Ability to start exploring data directly from search results
+
+## Data Exploration
+
+- Support for exploration using SQL, Python, and AI
+- Ability to deploy an exploration to production as:
+  - A scheduled / dependent job, or
+  - An end product for end users
+
+## Data Science Environment
+
+- Full environment for development, deployment, and monitoring
+- Includes a **Feature Store**
+- Ability to run multiple alternatives (trainings) concurrently and track them
+- Ability to scale up/down automatically and programmatically
+- Ability to allocate resources (CPUs, memory)
+- Model deployment for inference:
+  - Monitor models in production
+  - Alert on issues
+  - (Open question: level of direct user interaction with models and required UX)
+- Integrated AI assistance for development, testing, and monitoring
+
+## Data Visualization
+
+- Visualize data using SQL, Python, AI, and visual components
+
+## Monitoring
+
+Applicable to all components individually as well as centrally/globally.
+
+- **Scheduling**: Identify when a run is late and whether it finishes on time; ability to implement custom logic
+- **Failures**: Ability to implement custom retry logic
+- **Data Availability**: Detect late/missing/reduced data volume; implement custom handling per source
+- **Data Quality**:
+  - Automatic statistical shape/profile checks (noted uncertainty about full feasibility)
+  - Ability to implement custom data quality checks
+- **Resource Monitoring**: Track usage and implement custom scaling logic
+- **Alerting**: Trigger only after automated solutions have failed or time thresholds are exceeded
+- **PII**: whether data contains PII
+
+Any element of the platform that can be hacked from outside, from within the code and by the users must be monitored.
+
+## Access Management
+
+- Each component should support user grouping and granular access control
+
+## Backup and Restore
+
+- Ability to define which data and code should be backed up
+- Ability to go back in time (may be cost-intensive)
+- Ability to backfill from source systems or backups
+- Runbooks + regular drills
+
+## Technical Requirements
+
+- Everything defined as **Infrastructure as Code (IaC)**
+- Easily searchable and traceable logging
+- Full API access for every technology in the stack
+- Programmatic access to secured secrets
+
+## Participants
 
 A platform should support multiple types of users. Every company names them differently. I will give an example naming in the brackets.
 
@@ -45,25 +119,6 @@ A platform should support multiple types of users. Every company names them diff
 - Users who will explore data using visual tools (business users)
 - Legal team to help classify the data and access
 - Security team to help monitor data security and access
-
-### Monitoring
-
-Pipelines should be monitored for:
-- speed
-- resources
-- errors
-- whether they start on time
-- how the environment where they run scales up/down
-- whether the amount of data statistically deviates from the usual
-- whether the statistics of each data column/field deviates from the usual
-- whether data is logically correct
-- cost
-- whether data contains PII
-
-Storage should be monitored for:
-- cost
-
-Any element of the platform that can be hacked from outside, from within the code and by the users must be monitored.
 
 ### Processes
 
