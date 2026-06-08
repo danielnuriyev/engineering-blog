@@ -10,7 +10,7 @@ You can skip to the Summary.
 
 ![data platform diagram](./diagram-wide.png)
 
-## Pipelines
+### Pipelines
 
 - **Ingestion**: Ability to implement any source and destination
 - **Transformation**:
@@ -18,7 +18,7 @@ You can skip to the Summary.
   - Python transformations should be able to run on a cluster either as distributed dataframes or concurrent batches
 - Ability to build a pipeline using AI
 
-## Orchestration of Schedules and Dependencies
+### Orchestration of Schedules and Dependencies
 
 - Ability to assign at least one schedule to a pipeline
 - Ability to implement custom dependency logic
@@ -28,7 +28,7 @@ You can skip to the Summary.
 - Ability to test downstream effects of a change
 - Ability to build and test using AI
 
-## Query Engine
+### Query Engine
 
 - ANSI SQL support
 - Custom functions in:
@@ -37,7 +37,7 @@ You can skip to the Summary.
 - Ability to scale up/down automatically and programmatically
 - Multitenancy support
 
-## Data Catalog
+### Data Catalog
 
 - Table & column descriptions and ownership (technical + content owners)
 - Lineage tracking
@@ -49,14 +49,14 @@ You can skip to the Summary.
 - Strong search capabilities
 - Ability to start exploring data directly from search results
 
-## Data Exploration
+### Data Exploration
 
 - Support for exploration using SQL, Python, and AI
 - Ability to deploy an exploration to production as:
   - A scheduled / dependent job, or
   - An end product for end users
 
-## Data Science Environment
+### Data Science Environment
 
 - Full environment for development, deployment, and monitoring
 - Includes a **Feature Store**
@@ -69,11 +69,11 @@ You can skip to the Summary.
   - (Open question: level of direct user interaction with models and required UX)
 - Integrated AI assistance for development, testing, and monitoring
 
-## Data Visualization
+### Data Visualization
 
 - Visualize data using SQL, Python, AI, and visual components
 
-## Monitoring
+### Monitoring
 
 Applicable to all components individually as well as centrally/globally.
 
@@ -89,25 +89,25 @@ Applicable to all components individually as well as centrally/globally.
 
 Any element of the platform that can be hacked from outside, from within the code and by the users must be monitored.
 
-## Access Management
+### Access Management
 
 - Each component should support user grouping and granular access control
 
-## Backup and Restore
+### Backup and Restore
 
 - Ability to define which data and code should be backed up
 - Ability to go back in time (may be cost-intensive)
 - Ability to backfill from source systems or backups
 - Runbooks + regular drills
 
-## Technical Requirements
+### Technical Requirements
 
 - Everything defined as **Infrastructure as Code (IaC)**
 - Easily searchable and traceable logging
 - Full API access for every technology in the stack
 - Programmatic access to secured secrets
 
-## Participants
+### Participants
 
 A platform should support multiple types of users. Every company names them differently. I will give an example naming in the brackets.
 
