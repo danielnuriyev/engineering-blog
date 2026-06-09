@@ -157,21 +157,23 @@ GitHub + Pulumi + Airbyte + Snowflake + Hopsworks + Slack + Claude Opus. Snowfla
 
 ### Modular
 
+Based on a cloud with cross cloud and open source technologies. You can also use cloud versions of the same technologies.
+
+- **communication:** Slack or self hosted Mattermost
 - **version control:** GitHub is the default unless you have reasons to prefer other git providers or alternatives.
-- **orchestration:** Dagster. The alternative Airflow and Prefect are catching up for data. Do your research. They have paid cloud versions.
-- **ingestion**: Airbyte
-- **query engine:** depends on the cloud. Snowflake and Starburst/Trino are cross cloud. Trino is an option for local development, can be deployed to any cloud but then you are responsible for it. Trino exists in AWS as Athena.
 - **IaC:** I prefer Pulumi's programmability over Terraform
 - **OS:** your development, testing and production environments should be the same. Most likely you'll use docker with some Linux flavor.
 - **shell languge:** zsh has more programming and interactive features and is the standard on Mac.
 - **programming language:** Python is the language of data. Use type annotations with a linter. Since version 3.12 it can even run OS threads in parallel using `interpreters` module. But it is relatively slow even when using modules implemented in C. Nevertheless usually multi-step pipelines that pipe large amounts of data lose performance in other places. If you do need speed, consider Spark because it runs on JVM's JIT.
-- **ML**: if you choose Spark/Flink/Dask, keep in mind that not every ML algorithm is parallelizeable. For serving models through APIs, you can save a model as ONNX, code the API in Go to handle spikes + use your cloud's load balancer and registry. Consider Hopsworks as a complete ML environment.
+- **coding** environment should give you the choice of all available AI models/agents. Use the cheapest and quick for most tasks + the most expensive and slow for complex tasks.
+- **cloud:** AWS is the oldest and mostly used. Google and Azure may be good due to the ecosystem of their tools with integrated 'AI'. 
 - **execution envoronment:** k8s. Each cloud has its implementation. I'd use Docker Desktop with `kind` for local development. For monitoring you can install Fluent Bit with Elastic Search and Kibana. Your cloud likely offers an Elastic Search service.
 - **secrets**: if you want to go cross cloud, use Infisical
 - **CICD:** if you use GitHUb, use GitHub Action Runners.
-- **cloud:** AWS is the oldest and mostly used. Google and Azure may be good due to the ecosystem of their tools with integrated 'AI'.
-- **communication:** Slack or self hosted Mattermost
+- **orchestration:** Dagster. The alternative Airflow and Prefect are catching up for data. Do your research. They have paid cloud versions.
+- **ingestion**: Airbyte
+- **query engine:** depends on the cloud. Snowflake and Starburst/Trino are cross cloud. Trino is an option for local development, can be deployed to any cloud but then you are responsible for it. Trino exists in AWS as Athena.
+- **ML**: if you choose Spark/Flink/Dask, keep in mind that not every ML algorithm is parallelizeable. For serving models through APIs, you can save a model as ONNX, code the API in Go to handle spikes + use your cloud's load balancer and registry. Consider Hopsworks as a complete ML environment.
 - **data exploration tools** depend on your data scientists and the cloud. I have found Jupyter Hub deployed into my cloud account useful because your code can keep running, use more resources and data loads faster, especially combined with Dask or Spark. The implementation of Spark/Flink also depends on the cloud or on the desire and budget to use DataBricks.
 - **data catalog + visualization** depend on the cloud. For AWS it is better to use your own or paid DataHub + Metabase / Sigma Computing / ThoughtSpot
   - beware of keeping your business logic in one of these tools. It is better to keep your business logic in pipepines whose code is in a version control system like Git and use the tools for visualization only
-- **coding** environment should give you the choice of all available AI models/agents. Use the cheapest and quick for most tasks + the most expensive and slow for complex tasks.
