@@ -66,7 +66,6 @@ You can skip to the Summary.
 - Model deployment for inference:
   - Monitor models in production
   - Alert on issues
-  - (Open question: level of direct user interaction with models and required UX)
 - Integrated AI assistance for development, testing, and monitoring
 
 ### Data Visualization
