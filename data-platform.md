@@ -107,6 +107,10 @@ Any element of the platform that can be hacked from outside, from within the cod
 - Full API access for every technology in the stack
 - Programmatic access to secured secrets
 
+### Testing
+
+- ability to test downstream effect of a change before submitting code for review, in addition to all the usual ways of testing software and data.
+
 ### Participants
 
 A platform should support multiple types of users. Every company names them differently. I will give an example naming in the brackets.
