@@ -36,6 +36,7 @@ You can skip to the Summary.
   - Dynamically compiled language (performance)
 - Ability to scale up/down automatically and programmatically
 - Multitenancy support
+- Query speed: decision whether analytical queries' response time needs to be near real time or a user can wait, or both.
 
 ### Data Catalog
 
@@ -171,7 +172,7 @@ Based on a cloud with cross cloud and free open source technologies. You can als
 - **CICD:** if you use GitHUb, use GitHub Action Runners.
 - **orchestration:** Dagster. The alternative Airflow and Prefect are catching up for data. Do your research. They have paid cloud versions.
 - **ingestion**: Airbyte
-- **query engine:** depends on the cloud. Trino is cross cloud but you are responsible for it. Trino exists in AWS as Athena. Starburst is a paid Trino and has additional features.
+- **query engine:** depends on the cloud. Trino is cross cloud but you are responsible for it. Trino exists in AWS as Athena. Starburst is a paid Trino and has additional features. For near real time query response time consider Doris / Starrocks.
 - **ML**: if you choose Spark/Flink/Dask, keep in mind that not every ML algorithm is parallelizeable. For serving models through APIs, you can save a model as ONNX, code the API in Go to handle spikes + use your cloud's load balancer and registry. Consider Hopsworks as a complete ML environment.
 - **data exploration tools** depend on your data scientists and the cloud. I have found Jupyter Hub deployed into my cloud account useful because your code can keep running, use more resources and data loads faster, especially combined with Dask or Spark.
 - **data catalog + visualization** depend on the cloud. For AWS it is better to use your own or paid DataHub + Metabase / Sigma Computing / ThoughtSpot
