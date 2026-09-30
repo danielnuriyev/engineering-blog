@@ -60,7 +60,6 @@ You can skip to the Summary.
 ### Data Science Environment
 
 - Full environment for development, deployment, and monitoring
-- Includes a **Feature Store**
 - Ability to run multiple alternatives (trainings) concurrently and track them
 - Ability to scale up/down automatically and programmatically
 - Ability to allocate resources (CPUs, memory)
@@ -68,6 +67,7 @@ You can skip to the Summary.
   - Monitor models in production
   - Alert on issues
 - Integrated AI assistance for development, testing, and monitoring
+- Includes a **Feature Store**
 
 ### Data Visualization
 
@@ -173,7 +173,7 @@ Based on a cloud with cross cloud and free open source technologies. You can als
 - **orchestration:** Dagster. The alternative Airflow and Prefect are catching up for data. Do your research. They have paid cloud versions.
 - **ingestion**: Airbyte
 - **query engine:** depends on the cloud. Trino is cross cloud but you are responsible for it. Trino exists in AWS as Athena. Starburst is a paid Trino and has additional features. For near real time query response time consider Doris / Starrocks.
-- **ML**: if you choose Spark/Flink/Dask, keep in mind that not every ML algorithm is parallelizeable. For serving models through APIs, you can save a model as ONNX, code the API in Go to handle spikes + use your cloud's load balancer and registry. Consider Hopsworks as a complete ML environment.
+- **ML**: if you choose Spark/Flink/Dask, keep in mind that not every ML algorithm is parallelizeable. For serving models through APIs, you can save a model as ONNX, code the API in Go to handle spikes + use your cloud's load balancer and registry. Consider Hopsworks as a complete ML environment. You can also put it together with Feast as the feature store, MLFlow for experiment tracking & model registry, BentoML for model serving, Evidently AI or WhyLabs for monitoring & drift detection. If you use LLMs, we need to discuss it separately.
 - **data exploration tools** depend on your data scientists and the cloud. I have found Jupyter Hub deployed into my cloud account useful because your code can keep running, use more resources and data loads faster, especially combined with Dask or Spark.
 - **data catalog + visualization** depend on the cloud. For AWS it is better to use your own or paid DataHub + Metabase / Sigma Computing / ThoughtSpot
 
